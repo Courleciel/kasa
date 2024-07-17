@@ -1,8 +1,9 @@
-function Card() {
+function Card({ cover }) {
   return (
-      <div className="card">
-      </div>
-  )
+    <div className="card">
+      <img src={cover} alt="Housing" className="card-img" />
+    </div>
+  );
 }
 
-export default Card
+export default Card;
