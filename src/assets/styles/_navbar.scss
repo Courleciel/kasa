@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  .logo {
+    height: 50px;
+  }
+
+  .nav-links {
+    display: flex;
+
+    a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
