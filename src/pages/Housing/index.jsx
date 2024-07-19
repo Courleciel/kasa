@@ -11,7 +11,7 @@ function Housing() {
     return <div>Logement non trouvé</div>;
   }
 
-  const rating = Number(advertisement.rating); // Convertir le rating en nombre
+  const rating = Number(advertisement.rating);
 
   return (
     <div className='housing'>
