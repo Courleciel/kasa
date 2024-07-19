@@ -11,9 +11,10 @@ function Housing() {
   }
 
   return (
-    <div>
-      <h1>{advertisement.title}</h1>
+    <div className='housing'>
       <Slideshow pictures={advertisement.pictures} />
+      <h1>{advertisement.title}</h1>
+      <h2>{advertisement.location}</h2>
       <p>{advertisement.description}</p>
     </div>
   );

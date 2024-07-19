@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import arrow from '../../assets/arrow.png';
 
 function Slideshow({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,7 +21,7 @@ function Slideshow({ pictures }) {
     <div className="slideshow">
       {totalPictures > 1 && (
         <button className="slideshow-btn prev" onClick={handlePrev}>
-          ‹
+          <img src={arrow} alt="Previous" className="arrow-img" />
         </button>
       )}
       <div className="slideshow-image-container">
@@ -33,7 +34,7 @@ function Slideshow({ pictures }) {
       </div>
       {totalPictures > 1 && (
         <button className="slideshow-btn next" onClick={handleNext}>
-          ›
+          <img src={arrow} alt="Previous" className="arrow-img" />
         </button>
       )}
     </div>
