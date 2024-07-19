@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './assets/styles/main.scss'
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './assets/styles/main.scss';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -11,16 +11,16 @@ import Error from './components/Error';
 
 ReactDOM.render(
   <React.StrictMode>
-      <Router>
+    <Router>
       <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/logements" element={<Housing />} />
-            <Route path="/apropos" element={<About />} />
-            <Route path="*" element={<Error />} />
-          </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/logements/:id" element={<Housing />} /> {/* Route dynamique */}
+        <Route path="/apropos" element={<About />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
       <Footer />
-      </Router>
+    </Router>
   </React.StrictMode>,
-document.getElementById('root')
-)
+  document.getElementById('root')
+);

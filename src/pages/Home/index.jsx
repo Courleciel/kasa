@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Banner from '../../components/Banner';
 import Card from '../../components/Card';
 import data from '../../data/housing_adverstisements.json'
+import { Link } from 'react-router-dom';
 
 function Home() {
   const [advertisements, setAdvertisements] = useState([]);
@@ -15,7 +16,9 @@ function Home() {
       <Banner />
       <div className='cards'>
         {advertisements.map(ad => (
-          <Card key={ad.id} cover={ad.cover} />
+          <Link key={ad.id} to={`/logements/${ad.id}`} className='card-link'>
+            <Card key={ad.id} cover={ad.cover} />
+          </Link>
         ))}
       </div>
     </div>
