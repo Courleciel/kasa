@@ -1,14 +1,92 @@
 .housing {
   margin: 30px;
+}
 
-  h1 {
-    color: $primary-color;
-    margin-bottom: 20px;
-    font-weight: 500;
-  }
+h1 {
+  color: $primary-color;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
 
-  h2 {
-    font-weight: bold;
-    font-size: 1rem;
-  }
+h2 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.housing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.housing-info {
+  flex: 1;
+}
+
+.host-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.host-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.host-details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.host-name {
+  margin-bottom: 5px;
+  color: $primary-color;
+  font-weight: 500;
+  text-align: right;
+}
+
+.host-rating {
+  display: flex;
+}
+
+.star {
+  font-size: 35px;
+  color: #e0e0e0;
+}
+
+.star.filled {
+  color: $primary-color;
+}
+
+.host-picture {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.housing-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.housing-tag {
+  background-color: $primary-color;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  width: 12%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.housing_elements {
+  display: flex;
+  gap: 20px;
 }
