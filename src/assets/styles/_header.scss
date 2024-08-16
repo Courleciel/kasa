@@ -23,3 +23,9 @@ nav {
     }
   }
 }
+
+@media (max-width: 768px) {
+  nav .logo {
+    height: 60px;
+  }
+}

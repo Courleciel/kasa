@@ -31,6 +31,16 @@
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     z-index: 2;
     margin: 0;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    left: 20px;
+    transform: translateY(-50%);
+    text-align: left;
+    font-size: 30px;
   }
 }
 
@@ -42,6 +52,12 @@
   background-color: #F6F6F6;
   border-radius: 25px;
   padding: 40px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin: 20px;
+  }
 }
 
 .card {
