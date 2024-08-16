@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import advertisements from '../../data/housing_adverstisements.json';
 import Slideshow from '../../components/SlideShow';
 import Collapse from '../../components/Collapse';
@@ -8,7 +8,7 @@ function Housing() {
   const advertisement = advertisements.find(ad => ad.id === id);
 
   if (!advertisement) {
-    return <div>Logement non trouvé</div>;
+    return <Navigate to="/error" />;
   }
 
   const rating = Number(advertisement.rating);
