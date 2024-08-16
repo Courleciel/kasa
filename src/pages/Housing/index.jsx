@@ -51,9 +51,10 @@ function Housing() {
       </div>
 
       <div className='housing_elements'>
-        <Collapse title="Description" content={advertisement.description} />
+        <Collapse title="Description" content={advertisement.description} id="description-collapse" />
         <Collapse
           title="Équipements"
+          id="equipments-collapse"
           content={
             <ul>
               {advertisement.equipments.map((equipment, index) => (

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import arrow from '../../assets/arrow.png';
 import './_collapse.scss'
 
-function Collapse({ title, content }) {
+function Collapse({ id, title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -10,7 +10,7 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <div className="collapse-container">
+    <div className="collapse-container" id={id}>
       <div className="collapse-header" onClick={toggleCollapse}>
         <h3>{title}</h3>
         <img

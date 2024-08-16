@@ -93,8 +93,8 @@ h2 {
 
 @media (max-width: 768px) {
   .housing-details {
-    display: block; /* Changer en block pour mobile */
-    margin-bottom: 20px;
+    display: block;
+    margin: 0 ;
   }
 
   .housing-header {
@@ -108,11 +108,10 @@ h2 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 20px;
   }
 
   .host-info {
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .housing_elements {

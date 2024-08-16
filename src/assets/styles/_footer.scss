@@ -16,4 +16,12 @@ footer {
     color: white;
     margin: 0;
   }
+
+  @media (max-width: 768px) {
+
+    .footer_logo {
+      height: 50px;
+      margin-bottom: 10px;
+    }
+  }
 }

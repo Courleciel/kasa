@@ -24,8 +24,16 @@
   font-size: 16px;
   text-decoration: none;
   margin-top: 20px;
+  font-weight: 700;
 }
 
 .error-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+  .error-link {
+    margin-top: 40%;
+  }
 }
