@@ -13,10 +13,11 @@ h2 {
   font-size: 1rem;
 }
 
-.housing-header {
+.housing-details {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 .housing-info {
@@ -81,7 +82,6 @@ h2 {
   padding: 5px 10px;
   border-radius: 15px;
   font-size: 14px;
-  width: 12%;
   text-align: center;
   font-weight: bold;
 }
@@ -89,4 +89,48 @@ h2 {
 .housing_elements {
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .housing-details {
+    display: block; /* Changer en block pour mobile */
+    margin-bottom: 20px;
+  }
+
+  .housing-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .host-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .host-info {
+    margin-bottom: 0;
+  }
+
+  .housing_elements {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .host-rating {
+    order: -1;
+  }
+
+  .housing-tags {
+    margin: 0;
+  }
+
+  .housing-tag {
+    width: auto;
+    border-radius: 10px;
+  }
 }

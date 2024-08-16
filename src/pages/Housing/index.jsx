@@ -16,36 +16,38 @@ function Housing() {
   return (
     <div className='housing'>
       <Slideshow pictures={advertisement.pictures} />
-
-      <div className='housing-header'>
-        <div className='housing-info'>
-          <h1>{advertisement.title}</h1>
-          <h2>{advertisement.location}</h2>
-        </div>
-        <div className='host-section'>
-          <div className='host-info'>
-            <div className='host-details'>
-              <p className='host-name'>{advertisement.host.name}</p>
-            </div>
-            <img src={advertisement.host.picture} alt={advertisement.host.name} className='host-picture' />
+      <div className='housing-details'>
+        <div className='housing-header'>
+          <div className='housing-info'>
+            <h1>{advertisement.title}</h1>
+            <h2>{advertisement.location}</h2>
           </div>
-          <div className='host-rating'>
-            {[1, 2, 3, 4, 5].map(star => (
-              <span
-                key={star}
-                className={`star ${star <= rating ? 'filled' : ''}`}
-              >
-                &#9733;
-              </span>
+
+          <div className='housing-tags'>
+            {advertisement.tags.map((tag, index) => (
+              <span key={index} className='housing-tag'>{tag}</span>
             ))}
           </div>
-        </div>
-      </div>
 
-      <div className='housing-tags'>
-        {advertisement.tags.map((tag, index) => (
-          <span key={index} className='housing-tag'>{tag}</span>
-        ))}
+        </div>
+          <div className='host-section'>
+            <div className='host-info'>
+              <div className='host-details'>
+                <p className='host-name'>{advertisement.host.name}</p>
+              </div>
+              <img src={advertisement.host.picture} alt={advertisement.host.name} className='host-picture' />
+            </div>
+            <div className='host-rating'>
+              {[1, 2, 3, 4, 5].map(star => (
+                <span
+                  key={star}
+                  className={`star ${star <= rating ? 'filled' : ''}`}
+                >
+                  &#9733;
+                </span>
+              ))}
+            </div>
+          </div>
       </div>
 
       <div className='housing_elements'>
