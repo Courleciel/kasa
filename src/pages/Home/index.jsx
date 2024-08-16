@@ -17,7 +17,7 @@ function Home() {
       <div className='cards'>
         {advertisements.map(ad => (
           <Link key={ad.id} to={`/logements/${ad.id}`} className='card-link'>
-            <Card key={ad.id} cover={ad.cover} />
+            <Card key={ad.id} cover={ad.cover} title={ad.title} />
           </Link>
         ))}
       </div>
