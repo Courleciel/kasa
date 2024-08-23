@@ -52,6 +52,7 @@ h2 {
 
 .host-rating {
   display: flex;
+  margin-left: auto;
 }
 
 .star {
@@ -108,6 +109,8 @@ h2 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .host-info {
@@ -122,6 +125,7 @@ h2 {
 
   .host-rating {
     order: -1;
+    margin: 0;
   }
 
   .housing-tags {
