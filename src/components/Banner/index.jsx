@@ -14,7 +14,9 @@ function Banner() {
         <>
           <img src={bannerImg} alt="banner_img" className="banner_img" />
           <div className="overlay"></div>
-          <h1>Chez vous, partout ailleurs</h1>
+          <h1>
+            <span>Chez vous,</span> partout ailleurs
+          </h1>
         </>
       )}
       {isAboutPage && (
